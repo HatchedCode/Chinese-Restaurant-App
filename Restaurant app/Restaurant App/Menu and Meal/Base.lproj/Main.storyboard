@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7bW-t6-XtX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="R6D-3P-sB8">
+            <objects>
+                <viewController id="fym-HY-UdZ" customClass="MenuViewController" customModule="Restaurant_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eVB-cj-shf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="adn-wr-Sgw">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <connections>
+                                    <segue destination="8WD-bE-OOX" kind="embed" id="W7o-9c-gyr"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88235294119999996" green="0.074509803920000006" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="adn-wr-Sgw" firstAttribute="bottom" secondItem="wWo-dd-bF8" secondAttribute="bottom" id="JOg-IA-ppG"/>
+                            <constraint firstItem="adn-wr-Sgw" firstAttribute="leading" secondItem="eVB-cj-shf" secondAttribute="leading" id="lVu-vt-bmL"/>
+                            <constraint firstItem="adn-wr-Sgw" firstAttribute="centerX" secondItem="wWo-dd-bF8" secondAttribute="centerX" id="m9e-v3-YHA"/>
+                            <constraint firstItem="adn-wr-Sgw" firstAttribute="centerY" secondItem="wWo-dd-bF8" secondAttribute="centerY" id="wHB-65-Svg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wWo-dd-bF8"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="pdf-kt-pJl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eU8-yp-6yL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.600000000000001" y="-116.49175412293854"/>
+        </scene>
+        <!--Actual Menu Collection View Controller-->
+        <scene sceneID="tT5-S4-8kx">
+            <objects>
+                <collectionViewController id="8WD-bE-OOX" customClass="ActualMenuCollectionViewController" customModule="Restaurant_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="U8K-2H-JVC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.15686274510000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="r7c-iS-Bma">
+                            <size key="itemSize" width="370" height="91"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" reuseIdentifier="MenuItem1" id="lY5-jp-c4q" customClass="SingleCellCollectionViewCell" customModule="Restaurant_App" customModuleProvider="target">
+                                <rect key="frame" x="2.5" y="0.0" width="370" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="370" height="91"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xhc-6i-Vel">
+                                            <rect key="frame" x="238" y="8" width="112" height="20.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="112" id="pRI-lR-odn"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click To See Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZV-Q3-Lpl">
+                                            <rect key="frame" x="238" y="51" width="112" height="20.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="112" id="6lD-b8-ezA"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O6p-ui-VNd">
+                                            <rect key="frame" x="0.0" y="0.0" width="230" height="91"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="230" id="UHv-ZJ-2fg"/>
+                                                <constraint firstAttribute="height" constant="91" id="gjb-Jo-Zcx"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="O6p-ui-VNd" firstAttribute="top" secondItem="lY5-jp-c4q" secondAttribute="top" id="0lG-xf-sGX"/>
+                                    <constraint firstItem="DZV-Q3-Lpl" firstAttribute="top" secondItem="Xhc-6i-Vel" secondAttribute="bottom" constant="22.5" id="A2h-AZ-oZ8"/>
+                                    <constraint firstItem="Xhc-6i-Vel" firstAttribute="leading" secondItem="O6p-ui-VNd" secondAttribute="trailing" constant="8" id="ELU-fN-nHl"/>
+                                    <constraint firstItem="DZV-Q3-Lpl" firstAttribute="leading" secondItem="O6p-ui-VNd" secondAttribute="trailing" constant="8" id="NgJ-MN-dLK"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xhc-6i-Vel" secondAttribute="trailing" constant="20" id="htI-tY-EYI"/>
+                                    <constraint firstItem="Xhc-6i-Vel" firstAttribute="top" secondItem="lY5-jp-c4q" secondAttribute="top" constant="8" id="kzE-Jb-5oX"/>
+                                    <constraint firstAttribute="trailing" secondItem="DZV-Q3-Lpl" secondAttribute="trailing" constant="20" id="r4D-7l-1F1"/>
+                                    <constraint firstAttribute="trailing" secondItem="O6p-ui-VNd" secondAttribute="trailing" constant="140" id="ulL-nO-kLS"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="ImageOfMenuItem" destination="O6p-ui-VNd" id="eg2-YE-PUa"/>
+                                    <outlet property="Price" destination="Xhc-6i-Vel" id="OM7-Lq-htd"/>
+                                    <outlet property="ReferToDetailScreen" destination="DZV-Q3-Lpl" id="iEd-6p-hWC"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="8WD-bE-OOX" id="3i1-CJ-wGS"/>
+                            <outlet property="delegate" destination="8WD-bE-OOX" id="bzZ-J8-j8I"/>
+                        </connections>
+                    </collectionView>
+                    <connections>
+                        <segue destination="n4N-Kv-3MV" kind="show" identifier="item" id="Rsa-XX-Xlr"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PYl-Cr-XHJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1325.5999999999999" y="-117.84107946026987"/>
+        </scene>
+        <!--Menu Item View Controller-->
+        <scene sceneID="mUk-Kr-Hhh">
+            <objects>
+                <viewController id="n4N-Kv-3MV" customClass="MenuItemViewController" customModule="Restaurant_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uit-jY-ToL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red-chinese-background-yellow-gold-border-new-year-abstract-oriental-wallpaper-decoration-frame-83174535.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="x13-3A-CXZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VgD-WT-aRw">
+                                <rect key="frame" x="141.5" y="253" width="94" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.15686274510000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="x13-3A-CXZ" firstAttribute="centerX" secondItem="d19-iI-rYy" secondAttribute="centerX" id="6bp-BT-TQH"/>
+                            <constraint firstItem="VgD-WT-aRw" firstAttribute="centerX" secondItem="Uit-jY-ToL" secondAttribute="centerX" id="DrC-gU-Ekj"/>
+                            <constraint firstItem="x13-3A-CXZ" firstAttribute="leading" secondItem="Uit-jY-ToL" secondAttribute="leading" id="J6f-pa-XjE"/>
+                            <constraint firstItem="VgD-WT-aRw" firstAttribute="centerY" secondItem="Uit-jY-ToL" secondAttribute="centerY" id="kAJ-AO-J2R"/>
+                            <constraint firstItem="x13-3A-CXZ" firstAttribute="bottom" secondItem="d19-iI-rYy" secondAttribute="bottom" id="sum-2H-W1b"/>
+                            <constraint firstItem="x13-3A-CXZ" firstAttribute="centerY" secondItem="d19-iI-rYy" secondAttribute="centerY" constant="-10" id="tga-Yf-wSH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="d19-iI-rYy"/>
+                    </view>
+                    <connections>
+                        <outlet property="PathRow" destination="VgD-WT-aRw" id="Ada-Sr-GUQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w08-2K-BKh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2226" y="-118"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="bIt-fq-BeN">
+            <objects>
+                <viewController id="cuR-yl-fij" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PML-WH-314">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red-chinese-background-yellow-gold-border-new-year-abstract-oriental-wallpaper-decoration-frame-83174535.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="GZG-2P-27j">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88235294119999996" green="0.074509803920000006" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GZG-2P-27j" firstAttribute="centerX" secondItem="2di-wu-IHW" secondAttribute="centerX" id="ABU-UA-Wc5"/>
+                            <constraint firstItem="GZG-2P-27j" firstAttribute="bottom" secondItem="2di-wu-IHW" secondAttribute="bottom" id="aF5-pD-IXR"/>
+                            <constraint firstItem="GZG-2P-27j" firstAttribute="centerY" secondItem="2di-wu-IHW" secondAttribute="centerY" id="aNN-EY-3h5"/>
+                            <constraint firstItem="GZG-2P-27j" firstAttribute="leading" secondItem="PML-WH-314" secondAttribute="leading" id="geg-36-PBW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2di-wu-IHW"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Pak-SV-ZH6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="513-gD-MIg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.600000000000001" y="1120.3898050974515"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="E8T-xB-ML9">
+            <objects>
+                <viewController id="Mdo-vH-UwJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SI2-32-sDF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red-chinese-background-yellow-gold-border-new-year-abstract-oriental-wallpaper-decoration-frame-83174535.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ofm-CD-C0m">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88235294119999996" green="0.074509803920000006" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ofm-CD-C0m" firstAttribute="leading" secondItem="SI2-32-sDF" secondAttribute="leading" id="ADX-QL-RH1"/>
+                            <constraint firstItem="Ofm-CD-C0m" firstAttribute="centerY" secondItem="Dl1-eP-a8q" secondAttribute="centerY" id="OQM-Fp-qTs"/>
+                            <constraint firstItem="Ofm-CD-C0m" firstAttribute="bottom" secondItem="Dl1-eP-a8q" secondAttribute="bottom" id="oK2-57-1HJ"/>
+                            <constraint firstItem="Ofm-CD-C0m" firstAttribute="centerX" secondItem="Dl1-eP-a8q" secondAttribute="centerX" id="zl6-Wf-OyD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Dl1-eP-a8q"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="ykO-lY-Tdh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="duy-qa-Vpr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.600000000000001" y="-1329.0854572713645"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QuU-gG-yxo">
+            <objects>
+                <navigationController id="7bW-t6-XtX" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="J1y-NJ-abK">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.94117647059999998" green="0.15686274510000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9MX-aY-CU0" kind="relationship" relationship="rootViewController" id="txC-cG-31I"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RG2-mB-HPH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3124" y="-116"/>
+        </scene>
+        <!--Main Tab View Controller-->
+        <scene sceneID="36Q-KW-8QP">
+            <objects>
+                <tabBarController id="9MX-aY-CU0" customClass="MainTabViewController" customModule="Restaurant_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="mqX-dv-Rkt">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="9Nh-Ub-qFH"/>
+                    </navigationItem>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dDz-5b-bO9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.94117647058823528" green="0.15686274509803921" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Mdo-vH-UwJ" kind="relationship" relationship="viewControllers" id="A39-y6-ihe"/>
+                        <segue destination="fym-HY-UdZ" kind="relationship" relationship="viewControllers" id="MKq-FO-At4"/>
+                        <segue destination="cuR-yl-fij" kind="relationship" relationship="viewControllers" id="o2w-vj-Vnc"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="85e-iY-koe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1676" y="-116"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="red-chinese-background-yellow-gold-border-new-year-abstract-oriental-wallpaper-decoration-frame-83174535.jpg" width="800" height="565"/>
+    </resources>
+</document>
